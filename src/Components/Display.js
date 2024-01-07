@@ -1,4 +1,7 @@
 function Display({ user }) {
+    useEffect(() => {
+        console.log('Display Component mounted to DOM')
+    }, [])
     return (
         <div>
             <h1>{user.login}</h1>
